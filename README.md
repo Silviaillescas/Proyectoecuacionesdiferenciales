@@ -27,36 +27,31 @@ Este script implementa el método de **Euler** para resolver ecuaciones diferenc
 - `matplotlib`
 - `sympy`
 
-#### Ejecución:
-```bash
-python Euler.py
 
----
-
-### runge_kutta.py
-
-```markdown
 ### 2. `runge_kutta.py`
-Este script implementa el **método de Runge-Kutta de cuarto orden (RK4)** para resolver ecuaciones diferenciales de forma más precisa que Euler.
+Este script implementa el método de **Runge-Kutta de cuarto orden (RK4)** para resolver ecuaciones diferenciales de forma más precisa que Euler. También incluye ejemplos y graficación de las soluciones.
 
 #### Funcionalidades:
 - Resolución de ecuaciones diferenciales de primer orden:
   - `dy/dx = y - x`
 - Resolución de ecuaciones de segundo orden reescritas como sistemas:
-  - `y'' + 2y' + y = 0`
+  - `d²y/dx² + 2dy/dx + y = 0`
 - Resolución de sistemas de ecuaciones diferenciales:
   - `dx/dt = x + y`
   - `dy/dt = x - y`
 
 #### Uso:
-- Resuelve las ecuaciones numéricamente utilizando RK4 y, en algunos casos, compara los resultados con las soluciones analíticas.
-- Genera gráficos que representan las soluciones numéricas y, cuando es posible, la solución analítica.
+- Resuelve las ecuaciones numéricamente utilizando el método RK4.
+- Genera gráficos comparativos entre las soluciones analíticas y numéricas cuando están disponibles.
+- Representa el error absoluto entre las soluciones numéricas y analíticas.
 
 #### Dependencias:
 - `numpy`
 - `matplotlib`
 - `math`
 
-#### Ejecución:
+#### Ejecución de ambos programas:
 ```bash
 python runge_kutta.py
+python Euler.py
+
